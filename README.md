@@ -1,2 +1,1 @@
-# trunk
-have a fun!
+# Welcome to my homepage
