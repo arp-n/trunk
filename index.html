@@ -55,23 +55,65 @@
             margin-top: 20px;
         }
     </style>
+    
+    <!--This code is for adding laTex in html-->
+    
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LaTeX in HTML</title>
+ 
+     <!-- Include MathJax script from CDN -->
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ 
+    <!--This code is for crazy display-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+
+    <style>
+        /* Define crazy styling for skills */
+        .crazy-skills {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            color: #ff00ff; /* Purple */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Add animation for extra craziness */
+        @keyframes rainbow {
+            0% { color: #ff0000; } /* Red */
+            25% { color: #ff9900; } /* Orange */
+            50% { color: #ffff00; } /* Yellow */
+            75% { color: #00ff00; } /* Green */
+            100% { color: #0000ff; } /* Blue */
+        }
+
+        .crazy-skills span {
+            display: inline-block;
+            animation: rainbow 4s infinite;
+        }
+    </style>
+
+
 </head>
 <body>
 
     <header>
-        <img src="https://drive.google.com/uc?id=12f2RgtHhAJKidcD3j6Ht5Hdl1gKPYC9T" alt="Logo">
+        <img src="Logo.png"Logo" style="border-radius: 0;">
         <h1>Arpan Dutta</h1>
         <p>MStat Student | Indian Statistical Institute, Delhi</p>
     </header>
 
     <section id="home">
         <h2>Welcome to My Website!</h2>
-        <p>Hello, I'm Arpan Dutta, currently pursuing MStat at the Indian Statistical Institute, Delhi. Explore my personal website to learn more about me and my work.</p>
+        <p> Explore my personal website to learn more about me and my work.</p>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a graduate with a BSc. in Statistics from <a href="https://www.presiuniv.ac.in/" target="_blank">Presidency University, Kolkata</a>. My journey included studying at <a href="https://school.banglarshiksha.gov.in/ws/website/index/19160304501" target="_blank">Bagnan High School</a> and then pursuing Higher Secondary education. Here is my <a href="https://drive.google.com/file/d/1v1hi6Yc9DCqb5S1GJIQJehD3VzrHwxT5/view?usp=sharing" target="_blank">CV</a>.</p>
+        <p>Hello, I am Arpan Dutta, currently pursuing MStat in <a href="https://www.isid.ac.in/" target="_blank">Indian Statistical Institute, Delhi</a>. I did my BSc. in Statistics from <a href="https://www.presiuniv.ac.in/" target="_blank">Presidency University, Kolkata</a>. I am keen interested in Machine Learning and Deep Learning. Here is my <a href="https://drive.google.com/file/d/1v1hi6Yc9DCqb5S1GJIQJehD3VzrHwxT5/view?usp=sharing" target="_blank">CV</a>.</p>
     </section>
 
     <section id="education">
@@ -87,13 +129,9 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>C Programming</li>
-            <li>R Programming</li>
-            <li>Python</li>
-            <li>Microsoft Excel</li>
-            <li>LaTeX</li>
-        </ul>
+        <div class="crazy-skills">
+            <span>C</span> | <span>Python</span> | <span>R</span> | <span>\(LaTex\)</span> | <span>Excel</span>
+        </div>
     </section>
 
     <section id="responsibilities">
@@ -110,14 +148,11 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:arpan23s@isid.ac.in">arpan23s@isid.ac.in</a> | <a href="mailto:arpandutta0405@gmail.com">arpandutta0405@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/arpan29/" target="_blank">LinkedIn</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/arpan_dutta20/" target="_blank">Instagram</a></p>
-        <p>GitHub: <a href="https://github.com/arp-n/" target="_blank">GitHub</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100054795257497" target="_blank">Facebook</a></p>
+        <p> <a href="https://www.linkedin.com/in/arpan29/" target="_blank">LinkedIn</a> || <a href="https://www.instagram.com/arpan_dutta20/" target="_blank">Instagram</a> || <a href="https://github.com/arp-n/" target="_blank">GitHub</a> || <a href="https://www.facebook.com/profile.php?id=100054795257497" target="_blank">Facebook</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Arpan Dutta. All rights reserved.</p>
+        <p>&copy; Last updated February 07, 2024</p>
     </footer>
 
 </body>
