@@ -55,12 +55,86 @@
             margin-top: 20px;
         }
     </style>
+
+    <!--add navigation bar-->
+    <style>
+        /* Add navigation bar styling */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #4CAF50;
+            text-decoration: inherit;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        section {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
     
     <!--This code is for adding laTex in html-->
     
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>LaTeX in HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX in HTML</title>
  
      <!-- Include MathJax script from CDN -->
      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -121,31 +195,47 @@
 
 </head>
 <body>
-
+    
     <header>
-        <img src="Logo.png"Logo" style="border-radius: 0;">
+        <img src="Logo.png" alt="Logo" style="border-radius: 0;">
         <h1>Arpan Dutta</h1>
         <p>MStat Student | Indian Statistical Institute, Delhi</p>
     </header>
 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#responsibilities">Responsibilities</a>
+        <a href="#Project">Project</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    
     <section id="home">
         <h2>Welcome to My Website!</h2>
-        <p> Explore my personal website to learn more about me and my work.</p>
+        <p>Explore my personal website to learn more about me and my work.</p>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I am Arpan Dutta, currently pursuing MStat in <a href="https://www.isid.ac.in/" target="_blank">Indian Statistical Institute, Delhi</a>. I did my BSc. in Statistics from <a href="https://www.presiuniv.ac.in/" target="_blank">Presidency University, Kolkata</a>. I am keen interested in Machine Learning and Deep Learning. Here is my <a href="https://drive.google.com/file/d/1iRjN3Ky4tqKl2tqpdk1sLoLbo3Tm2nuG/view?usp=sharing" target="_blank">CV</a>.</p>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <img src="arpan.png" alt="Your Image" style="max-width: 200px; border-radius: 10px; margin-right: 20px;">
+            <p>Hello, I am Arpan Dutta, currently pursuing MStat in <a href="https://www.isid.ac.in/" style="color: #4CAF50; text-decoration: inherit;" target="_blank">Indian Statistical Institute, Delhi</a>. I did my BSc. in Statistics from <a href="https://www.presiuniv.ac.in/" style="color: #4CAF50; text-decoration: inherit;"" target="_blank">Presidency University, Kolkata</a>. I am keenly interested in Machine Learning and Deep Learning. Here is my <a href="https://drive.google.com/file/d/1iRjN3Ky4tqKl2tqpdk1sLoLbo3Tm2nuG/view?usp=sharing" style="color: #4CAF50; text-decoration: inherit;"" target="_blank">CV</a>.</p>
+        </div>
     </section>
+    
 
     <section id="education">
         <h2>Education</h2>
         <ul>
-            <li><strong>MStat (2023-2025)</strong> - <a href="https://www.isid.ac.in/" target="_blank">Indian Statistical Institute, Delhi</a></li>
-            <li><strong>BSc. in Statistics (2020-2023)</strong> - <a href="https://www.presiuniv.ac.in/" target="_blank">Presidency University, Kolkata</a></li>
-            <li><strong>Higher Secondary (2018)</strong> - <a href="https://school.banglarshiksha.gov.in/ws/website/index/19160304501" target="_blank">Bagnan High School</a></li>
-            <li><strong>High School (2016)</strong> - <a href="https://school.banglarshiksha.gov.in/ws/website/index/19160304501" target="_blank">Bagnan High School</a></li>
-            <li><strong>Primary School (2012)</strong> - <a href="https://schools.org.in/haora/19160400704/aloke-dhara-sikshayatan.html" target="_blank">AlokeDhara Sikshayatan</a></li>
+            <li><strong>MStat (2023-2025)</strong> - <a href="https://www.isid.ac.in/" target="_blank" style="color: #4CAF50; text-decoration: inherit;">Indian Statistical Institute, Delhi</a></li>
+            <li><strong>BSc. in Statistics (2020-2023)</strong> - <a href="https://www.presiuniv.ac.in/" target="_blank" style="color: #4CAF50; text-decoration: inherit;">Presidency University, Kolkata</a></li>
+            <li><strong>Higher Secondary (2018)</strong> - <a href="https://school.banglarshiksha.gov.in/ws/website/index/19160304501" target="_blank" style="color: #4CAF50; text-decoration: inherit;">Bagnan High School</a></li>
+            <li><strong>High School (2016)</strong> - <a href="https://school.banglarshiksha.gov.in/ws/website/index/19160304501" target="_blank" style="color: #4CAF50; text-decoration: inherit;">Bagnan High School</a></li>
+            <li><strong>Primary School (2012)</strong> - <a href="https://schools.org.in/haora/19160400704/aloke-dhara-sikshayatan.html" target="_blank" style="color: #4CAF50; text-decoration: inherit;">AlokeDhara Sikshayatan</a></li>
         </ul>
     </section>
 
@@ -158,12 +248,12 @@
 
     <section id="responsibilities">
         <h2>Responsibilities</h2>
-        <p>Responsible for E-Library management at <a href="https://www.presi-statistics.in/puss/" target="_blank">Predict</a>. Check out our E-Library to access resources and materials.</p>
+        <p>Responsible for E-Library management at <a href="https://www.presi-statistics.in/puss/" target="_blank" style="color: #4CAF50; text-decoration: inherit;">Predict</a>. Check out our E-Library to access resources and materials.</p>
     </section>
 
     <section id="Project">
         <h2>Project</h2>
-        1. Analysis of Real Estate Dataset in R [<a href="https://rpubs.com/arpand/1146414" target="_blank">slides</a>]  [<a href="https://drive.google.com/file/d/1y1PVNgqJfiHT6420M5hM_KAuWhw2o5X1/view?usp=sharing" target="_blank">real-estate.csv</a>]
+        1. Analysis of Real Estate Dataset in R [<a href="https://rpubs.com/arpand/1146414" target="_blank" style="color: #4CAF50; text-decoration: inherit;">slides</a>]  [<a href="https://drive.google.com/file/d/1y1PVNgqJfiHT6420M5hM_KAuWhw2o5X1/view?usp=sharing" target="_blank" style="color: #4CAF50; text-decoration: inherit;">real-estate.csv</a>]
     </section>
 
     <section id="blog">
@@ -174,7 +264,7 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:arpan23s@isid.ac.in">arpan23s@isid.ac.in</a> | <a href="mailto:arpandutta0405@gmail.com">arpandutta0405@gmail.com</a></p>
+        <p>Email: <a href="mailto:arpan23s@isid.ac.in" style="color: #4CAF50; text-decoration: inherit;">arpan23s@isid.ac.in</a> | <a href="mailto:arpandutta0405@gmail.com" style="color: #4CAF50; text-decoration: inherit;">arpandutta0405@gmail.com</a></p>
         <div class="social-media-logos">
             <a href="https://www.facebook.com/profile.php?id=100054795257497" target="_blank">
                 <img class="social-media-logo" src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Logo">
