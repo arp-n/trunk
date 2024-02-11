@@ -1,7 +1,7 @@
 # Welcome all!
-<h2>
+<br>
 Arpan Dutta
 Indian Statistical Institute
-</h2>
 
-hello this ismy webpage
+
+hello this is my webpage
